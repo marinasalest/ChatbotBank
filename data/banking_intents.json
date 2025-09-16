@@ -1,0 +1,234 @@
+{
+  "intents": {
+    "saldo": {
+      "keywords": ["saldo", "quanto tenho", "valor disponível", "balance", "quanto", "disponível", "quanto tenho na conta", "saldo atual", "ver saldo", "consultar saldo", "meu saldo", "saldo da conta"],
+      "intent": "balance",
+      "response_template": "Seu saldo atual é R$ {balance:.2f}"
+    },
+    "transacoes": {
+      "keywords": ["transações", "histórico", "movimentações", "extrato", "transaction", "history", "movimento", "últimas transações", "movimentação"],
+      "intent": "transactions",
+      "response_template": "Aqui estão suas transações recentes:\n{transactions}"
+    },
+    "transferencia": {
+      "keywords": ["transferir", "transferência", "enviar dinheiro", "transfer", "enviar", "mandar", "pagar", "enviar valor"],
+      "intent": "transfer",
+      "response_template": "Para fazer uma transferência, use o formulário de transferência. Você precisará do número da conta do destinatário e do valor que deseja enviar."
+    },
+    "pix": {
+      "keywords": ["pix", "o que é pix", "como funciona pix", "chave pix", "pagar com pix", "receber pix"],
+      "intent": "pix_info",
+      "response_template": "O PIX é um sistema de pagamentos instantâneos brasileiro criado pelo Banco Central. Permite transferir dinheiro 24 horas por dia, incluindo finais de semana e feriados, usando apenas uma chave (CPF, email, telefone ou chave aleatória). É gratuito e instantâneo!"
+    },
+    "deposito": {
+      "keywords": ["depositar", "depósito", "adicionar dinheiro", "deposit", "adicionar", "colocar", "colocar dinheiro", "colocar dinheiro na conta", "colocar dinheiro na minha conta", "fazer depósito", "quero depositar"],
+      "intent": "deposit",
+      "response_template": "Para fazer um depósito, use o formulário de depósito. Você pode adicionar dinheiro à sua conta."
+    },
+    "cartao": {
+      "keywords": ["cartão", "cartão de crédito", "cartão de débito", "limite", "fatura", "vencimento", "card", "crédito", "débito"],
+      "intent": "card_info",
+      "response_template": "Informações sobre cartões:\n\n💳 <strong>Cartão de Crédito:</strong> Permite compras a prazo com limite pré-aprovado\n💳 <strong>Cartão de Débito:</strong> Desconta diretamente da conta corrente\n📊 <strong>Limite:</strong> Valor máximo que pode ser gasto\n📅 <strong>Fatura:</strong> Resumo das compras do mês\n\nPara informações específicas do seu cartão, entre em contato com o suporte."
+    },
+    "emprestimo": {
+      "keywords": ["empréstimo", "emprestar", "financiamento", "crédito pessoal", "loan", "pegar dinheiro", "crédito"],
+      "intent": "loan_info",
+      "response_template": "Informações sobre empréstimos:\n\n💰 <strong>Crédito Pessoal:</strong> Dinheiro para uso livre\n🏠 <strong>Financiamento Imobiliário:</strong> Para compra de imóveis\n🚗 <strong>Financiamento de Veículos:</strong> Para compra de carros\n\nPara simular um empréstimo, acesse o menu 'Empréstimos' ou entre em contato com nosso atendimento."
+    },
+    "investimentos": {
+      "keywords": ["investir", "investimento", "renda fixa", "renda variável", "cdb", "lci", "lca", "tesouro", "ações", "invest", "aplicar dinheiro"],
+      "intent": "investment_info",
+      "response_template": "Opções de investimentos disponíveis:\n\n📈 <strong>Renda Fixa:</strong> CDB, LCI, LCA, Tesouro Direto\n📊 <strong>Renda Variável:</strong> Ações, Fundos de Investimento\n🏦 <strong>Poupança:</strong> Aplicação tradicional\n\nPara mais informações sobre investimentos, pergunte sobre conceitos específicos como 'CDB', 'LCI', 'Tesouro Direto' ou 'Ações'."
+    },
+    "seguros": {
+      "keywords": ["seguro", "seguros", "proteção", "cobertura", "sinistro", "apólice", "insurance", "proteger"],
+      "intent": "insurance_info",
+      "response_template": "Tipos de seguros disponíveis:\n\n🛡️ <strong>Seguro de Vida:</strong> Proteção para a família\n🏠 <strong>Seguro Residencial:</strong> Proteção do imóvel\n🚗 <strong>Seguro Auto:</strong> Proteção do veículo\n🏥 <strong>Seguro Saúde:</strong> Cobertura médica\n\nPara contratar um seguro, acesse o menu 'Seguros' ou fale com nosso corretor."
+    },
+    "conta_digital": {
+      "keywords": ["conta digital", "abrir conta", "conta online", "conta sem papel", "digital", "abrir", "nova conta"],
+      "intent": "digital_account",
+      "response_template": "Conta Digital - Vantagens:\n\n📱 <strong>100% Online:</strong> Abertura e gestão pelo celular\n💳 <strong>Cartão Gratuito:</strong> Sem anuidade\n🏧 <strong>Saques Gratuitos:</strong> Em qualquer caixa eletrônico\n💸 <strong>PIX Gratuito:</strong> Transferências instantâneas\n\nPara abrir sua conta digital, acesse o menu 'Abrir Conta' ou fale com nosso atendente."
+    },
+    "atendimento": {
+      "keywords": ["atendimento", "suporte", "falar com pessoa", "atendente", "help desk", "contato", "telefone"],
+      "intent": "support",
+      "response_template": "Canais de Atendimento:\n\n📞 <strong>Telefone:</strong> 0800 123 4567\n💬 <strong>Chat Online:</strong> Disponível 24h\n📧 <strong>Email:</strong> atendimento@banco.com.br\n🏪 <strong>Agências:</strong> Segunda a sexta, 9h às 17h\n\nEstou aqui para ajudar! O que precisa saber?"
+    },
+    "ajuda": {
+      "keywords": ["ajuda", "help", "como usar", "o que posso fazer", "comandos", "menu", "opções"],
+      "intent": "help",
+      "response_template": "Posso ajudá-lo com:\n\n<ol style=\"margin: 10px 0; padding-left: 20px;\">\n<li>💰 <strong>Consultar saldo da conta</strong></li>\n<li>📊 <strong>Ver histórico de transações</strong></li>\n<li>💸 <strong>Fazer transferências</strong></li>\n<li>💳 <strong>Processar depósitos</strong></li>\n<li>🏦 <strong>Conceitos bancários básicos</strong></li>\n<li>📈 <strong>Investimentos e renda fixa</strong></li>\n<li>🔤 <strong>Siglas bancárias e financeiras</strong></li>\n<li>⚖️ <strong>Tributação e impostos</strong></li>\n<li>💳 <strong>Cartões e crédito</strong></li>\n<li>🏠 <strong>Empréstimos e financiamentos</strong></li>\n<li>🛡️ <strong>Seguros</strong></li>\n<li>📱 <strong>Conta digital</strong></li>\n<li>❓ <strong>Responder perguntas bancárias gerais</strong></li>\n</ol>\n\n<strong>💡 Dica:</strong> Pergunte \"o que é [conceito]\" para aprender sobre qualquer termo bancário ou financeiro!\n\nO que gostaria de saber?"
+    },
+    "saudacao": {
+      "keywords": ["olá", "oi", "bom dia", "boa tarde", "boa noite", "hello", "hi", "e aí", "tudo bem", "como vai"],
+      "intent": "greeting",
+      "response_template": "Olá {name}! Como posso ajudá-lo com suas necessidades bancárias hoje?"
+    },
+    "despedida": {
+      "keywords": ["tchau", "até logo", "obrigado", "valeu", "bye", "até mais", "até breve", "obrigada"],
+      "intent": "farewell",
+      "response_template": "Foi um prazer ajudá-lo! Estou sempre aqui quando precisar. Tenha um ótimo dia! 😊"
+    },
+    "emergencia": {
+      "keywords": ["emergência", "roubo", "perda", "cartão perdido", "bloquear", "urgente", "emergency", "roubaram"],
+      "intent": "emergency",
+      "response_template": "🚨 <strong>ATENÇÃO - SITUAÇÃO DE EMERGÊNCIA</strong>\n\nSe seu cartão foi roubado ou perdido:\n\n1️⃣ <strong>Bloqueie IMEDIATAMENTE:</strong> Ligue 0800 123 4567\n2️⃣ <strong>Registre BO:</strong> Faça um Boletim de Ocorrência\n3️⃣ <strong>Altere senhas:</strong> Internet Banking e aplicativo\n4️⃣ <strong>Monitore conta:</strong> Verifique movimentações suspeitas\n\n<strong>Ligue AGORA:</strong> 0800 123 4567 (24h)"
+    },
+    "senha_esquecida": {
+      "keywords": ["esqueci a senha", "senha esquecida", "não lembro a senha", "recuperar senha", "resetar senha", "nova senha", "trocar senha", "alterar senha"],
+      "intent": "forgot_password",
+      "response_template": "Para recuperar sua senha:\n\n1️⃣ <strong>Internet Banking:</strong> Clique em 'Esqueci minha senha'\n2️⃣ <strong>App Mobile:</strong> Use a opção 'Recuperar acesso'\n3️⃣ <strong>Telefone:</strong> Ligue 0800 123 4567\n4️⃣ <strong>Agência:</strong> Compareça com documento de identidade\n\n<strong>Dica:</strong> Você receberá um código por SMS ou email para criar uma nova senha."
+    },
+    "extrato_detalhado": {
+      "keywords": ["extrato completo", "extrato detalhado", "extrato mensal", "extrato anual", "extrato por período", "extrato pdf", "imprimir extrato"],
+      "intent": "detailed_statement",
+      "response_template": "Para obter seu extrato detalhado:\n\n📱 <strong>App Mobile:</strong> Menu > Extratos > Período desejado\n💻 <strong>Internet Banking:</strong> Conta Corrente > Extratos\n🏪 <strong>Agência:</strong> Solicite na sua agência\n📧 <strong>Email:</strong> Configure envio automático\n\n<strong>Períodos disponíveis:</strong> 30, 60, 90 dias ou personalizado"
+    },
+    "limite_cartao": {
+      "keywords": ["limite do cartão", "aumentar limite", "limite de crédito", "solicitar limite", "limite disponível", "quanto posso gastar"],
+      "intent": "card_limit",
+      "response_template": "Informações sobre limite do cartão:\n\n💳 <strong>Limite Atual:</strong> Consulte no app ou internet banking\n📈 <strong>Aumentar Limite:</strong> Solicite pelo app ou agência\n📊 <strong>Limite Disponível:</strong> Limite total - valor da fatura\n⏰ <strong>Análise:</strong> Pode levar até 48h para aprovação\n\n<strong>Requisitos:</strong> Bom histórico de pagamentos e renda comprovada"
+    },
+    "fatura_cartao": {
+      "keywords": ["fatura do cartão", "valor da fatura", "vencimento da fatura", "pagar fatura", "fatura vencida", "juros da fatura"],
+      "intent": "card_bill",
+      "response_template": "Informações sobre fatura do cartão:\n\n📅 <strong>Vencimento:</strong> Todo dia 10 de cada mês\n💰 <strong>Valor Total:</strong> Consulte no app ou internet banking\n💳 <strong>Pagar Fatura:</strong> Débito automático ou transferência\n⚠️ <strong>Fatura Vencida:</strong> Juros de 15,9% ao mês\n\n<strong>Dica:</strong> Configure débito automático para não esquecer!"
+    },
+    "pix_chave": {
+      "keywords": ["chave pix", "cadastrar chave pix", "minha chave pix", "chave aleatória", "chave cpf", "chave email", "chave telefone"],
+      "intent": "pix_key",
+      "response_template": "Para gerenciar suas chaves PIX:\n\n🔑 <strong>Cadastrar Chave:</strong> App > PIX > Minhas Chaves\n📱 <strong>Tipos de Chave:</strong> CPF, Email, Telefone, Chave Aleatória\n🔒 <strong>Segurança:</strong> Máximo 5 chaves por conta\n❌ <strong>Excluir Chave:</strong> App > PIX > Gerenciar Chaves\n\n<strong>Importante:</strong> Chaves aleatórias são mais seguras!"
+    },
+    "investir_dinheiro": {
+      "keywords": ["onde investir", "como investir", "melhor investimento", "investir dinheiro", "aplicar dinheiro", "renda fixa", "cdb", "tesouro"],
+      "intent": "where_to_invest",
+      "response_template": "Opções de investimento para iniciantes:\n\n🏦 <strong>CDB:</strong> Renda fixa, seguro, fácil de entender\n📈 <strong>Tesouro Direto:</strong> Títulos do governo, muito seguro\n💰 <strong>Poupança:</strong> Tradicional, baixo risco\n📊 <strong>Fundos DI:</strong> Renda fixa, gestão profissional\n\n<strong>Dica:</strong> Comece com valores pequenos para aprender!"
+    },
+    "conta_poupanca": {
+      "keywords": ["conta poupança", "abrir poupança", "poupança", "rendimento poupança", "taxa poupança", "poupança digital"],
+      "intent": "savings_account",
+      "response_template": "Informações sobre Conta Poupança:\n\n💰 <strong>Rendimento:</strong> 0,5% ao mês + TR\n📅 <strong>Aniversário:</strong> Rendimento creditado todo dia do mês\n💳 <strong>Cartão:</strong> Disponível para conta poupança\n📱 <strong>Digital:</strong> Abertura 100% online\n\n<strong>Vantagem:</strong> Isenta de IR para até R$ 20.000!"
+    },
+    "segunda_via_cartao": {
+      "keywords": ["segunda via cartão", "cartão extraviado", "novo cartão", "reemitir cartão", "cartão danificado"],
+      "intent": "card_reissue",
+      "response_template": "Para solicitar segunda via do cartão:\n\n📱 <strong>App Mobile:</strong> Cartões > Solicitar 2ª via\n💻 <strong>Internet Banking:</strong> Cartões > Reemitir\n📞 <strong>Telefone:</strong> 0800 123 4567\n🏪 <strong>Agência:</strong> Compareça com documento\n\n<strong>Taxa:</strong> R$ 15,00 (exceto por defeito)\n<strong>Prazo:</strong> 5 a 10 dias úteis"
+    },
+    "bloquear_cartao": {
+      "keywords": ["bloquear cartão", "cartão bloqueado", "desbloquear cartão", "suspender cartão", "cartão temporariamente bloqueado"],
+      "intent": "block_card",
+      "response_template": "Para bloquear/desbloquear cartão:\n\n📱 <strong>App Mobile:</strong> Cartões > Bloquear/Desbloquear\n💻 <strong>Internet Banking:</strong> Cartões > Gerenciar\n📞 <strong>Telefone:</strong> 0800 123 4567\n\n<strong>Bloqueio Temporário:</strong> Para compras online\n<strong>Bloqueio Definitivo:</strong> Para perda/roubo\n<strong>Desbloqueio:</strong> Imediato pelo app"
+    },
+    "conta_conjunta": {
+      "keywords": ["conta conjunta", "abrir conta conjunta", "conta compartilhada", "conta de casal", "conta solidária"],
+      "intent": "joint_account",
+      "response_template": "Para abrir conta conjunta:\n\n👥 <strong>Requisitos:</strong> Ambos os titulares presentes\n📋 <strong>Documentos:</strong> RG, CPF, comprovante de renda\n🏪 <strong>Local:</strong> Agência física obrigatória\n⏰ <strong>Prazo:</strong> Abertura imediata\n\n<strong>Tipos:</strong> Solidária (ambos respondem) ou Proporcional (cada um responde pela sua parte)"
+    },
+    "portabilidade_salario": {
+      "keywords": ["portabilidade salário", "transferir salário", "receber salário", "conta salário", "mudar conta salário"],
+      "intent": "salary_transfer",
+      "response_template": "Para fazer portabilidade de salário:\n\n📋 <strong>Documentos:</strong> Carteira de trabalho, holerite\n🏪 <strong>Agência:</strong> Compareça com documentos\n📝 <strong>Formulário:</strong> Preenchimento na agência\n⏰ <strong>Prazo:</strong> 30 dias para processamento\n\n<strong>Vantagem:</strong> Sem taxas de manutenção na conta salário!"
+    },
+    "consignado": {
+      "keywords": ["empréstimo consignado", "consignado", "desconto em folha", "empréstimo salário", "crédito consignado"],
+      "intent": "consigned_loan",
+      "response_template": "Empréstimo Consignado - Vantagens:\n\n💰 <strong>Taxa Menor:</strong> A partir de 1,99% ao mês\n📋 <strong>Sem Comprovação:</strong> Desconto direto na folha\n⚡ <strong>Aprovação Rápida:</strong> Até 24 horas\n🛡️ <strong>Seguro:</strong> Proteção em caso de desemprego\n\n<strong>Requisitos:</strong> Funcionário público ou CLT com desconto em folha"
+    },
+    "financiamento_casa": {
+      "keywords": ["financiamento casa", "financiamento imóvel", "casa própria", "minha casa minha vida", "habitação"],
+      "intent": "home_loan",
+      "response_template": "Financiamento Imobiliário:\n\n🏠 <strong>Minha Casa Minha Vida:</strong> Até R$ 350 mil\n💰 <strong>Taxa:</strong> A partir de 4,5% ao ano\n📋 <strong>Entrada:</strong> A partir de 5%\n⏰ <strong>Prazo:</strong> Até 35 anos\n\n<strong>Requisitos:</strong> Renda comprovada, documentação do imóvel, avaliação"
+    },
+    "seguro_cartao": {
+      "keywords": ["seguro cartão", "proteção cartão", "seguro contra roubo", "proteção compras", "seguro cartão de crédito"],
+      "intent": "card_insurance",
+      "response_template": "Seguro do Cartão - Coberturas:\n\n🛡️ <strong>Roubo/Furto:</strong> Cobertura de compras não autorizadas\n🏥 <strong>Invalidez:</strong> Quitação da fatura em caso de invalidez\n💀 <strong>Morte:</strong> Quitação da fatura em caso de falecimento\n✈️ <strong>Viagem:</strong> Assistência 24h no exterior\n\n<strong>Valor:</strong> A partir de R$ 9,90/mês\n<strong>Contratação:</strong> App ou internet banking"
+    },
+    "cartao_virtual": {
+      "keywords": ["cartão virtual", "cartão temporário", "cartão online", "cartão digital", "cartão para compras online"],
+      "intent": "virtual_card",
+      "response_template": "Cartão Virtual - Vantagens:\n\n💳 <strong>Segurança:</strong> Número diferente do cartão físico\n🛒 <strong>Compras Online:</strong> Ideal para e-commerce\n⏰ <strong>Validade:</strong> 2 anos ou até cancelamento\n📱 <strong>Gerenciamento:</strong> Controle total pelo app\n\n<strong>Como usar:</strong> Solicite pelo app, use o número virtual nas compras online"
+    },
+    "investimento_renda_fixa": {
+      "keywords": ["renda fixa", "cdb", "lci", "lca", "tesouro direto", "investimento seguro", "aplicação conservadora"],
+      "intent": "fixed_income",
+      "response_template": "Investimentos de Renda Fixa:\n\n🏦 <strong>CDB:</strong> Certificado de Depósito Bancário\n🏠 <strong>LCI/LCA:</strong> Imóveis e Agronegócio (isento IR)\n📈 <strong>Tesouro Direto:</strong> Títulos do governo\n💰 <strong>Poupança:</strong> Aplicação tradicional\n\n<strong>Vantagem:</strong> Previsibilidade de retorno e baixo risco"
+    },
+    "investimento_renda_variavel": {
+      "keywords": ["renda variável", "ações", "fundos", "bolsa de valores", "investimento arriscado", "alto retorno"],
+      "intent": "variable_income",
+      "response_template": "Investimentos de Renda Variável:\n\n📊 <strong>Ações:</strong> Participação em empresas\n📈 <strong>Fundos de Ações:</strong> Gestão profissional\n🌍 <strong>Fundos Internacionais:</strong> Diversificação global\n💎 <strong>ETFs:</strong> Fundos de índice\n\n<strong>Risco:</strong> Maior volatilidade, mas potencial de retorno superior"
+    },
+    "tributacao_investimentos": {
+      "keywords": ["imposto investimento", "ir investimento", "tributação", "come cotas", "imposto de renda", "tributo"],
+      "intent": "investment_tax",
+      "response_template": "Tributação de Investimentos:\n\n📊 <strong>CDB/LCB:</strong> 22,5% IR (até 180 dias), 20% (até 360 dias), 15% (acima)\n🏠 <strong>LCI/LCA:</strong> Isentos de IR\n📈 <strong>Ações:</strong> 15% sobre lucro (acima de R$ 20 mil/mês)\n💰 <strong>Poupança:</strong> Isenta até R$ 20 mil\n\n<strong>Dica:</strong> LCI/LCA são isentos de IR!"
+    },
+    "cartao_credito_internacional": {
+      "keywords": ["cartão internacional", "viagem internacional", "dólar", "euro", "moeda estrangeira", "cartão viagem"],
+      "intent": "international_card",
+      "response_template": "Cartão de Crédito Internacional:\n\n✈️ <strong>Moedas:</strong> Dólar, Euro, Libra, Iene\n💱 <strong>Câmbio:</strong> Taxa do dia + IOF\n🛡️ <strong>Seguro Viagem:</strong> Incluído\n📱 <strong>Bloqueio:</strong> Pelo app em caso de perda\n\n<strong>IOF:</strong> 6,38% sobre compras no exterior"
+    },
+    "conta_estudante": {
+      "keywords": ["conta estudante", "conta universitário", "conta jovem", "conta para estudante", "conta gratuita"],
+      "intent": "student_account",
+      "response_template": "Conta para Estudantes:\n\n🎓 <strong>Requisitos:</strong> Matrícula em instituição de ensino\n💰 <strong>Taxas:</strong> Isenta de manutenção\n💳 <strong>Cartão:</strong> Sem anuidade\n📱 <strong>App:</strong> Interface simplificada\n\n<strong>Documentos:</strong> RG, CPF, comprovante de matrícula"
+    },
+    "conta_idoso": {
+      "keywords": ["conta idoso", "conta terceira idade", "conta aposentado", "conta 60+", "conta senior"],
+      "intent": "senior_account",
+      "response_template": "Conta para Idosos (60+):\n\n👴 <strong>Requisitos:</strong> 60 anos ou mais\n💰 <strong>Taxas:</strong> Isenta de manutenção\n💳 <strong>Cartão:</strong> Sem anuidade\n🏪 <strong>Prioridade:</strong> Atendimento preferencial\n\n<strong>Vantagens:</strong> Taxas reduzidas, atendimento especializado"
+    },
+    "conta_empresarial": {
+      "keywords": ["conta empresa", "conta empresarial", "conta pj", "conta jurídica", "conta corporativa"],
+      "intent": "business_account",
+      "response_template": "Conta Empresarial:\n\n🏢 <strong>Requisitos:</strong> CNPJ ativo\n📋 <strong>Documentos:</strong> Contrato social, cartão CNPJ\n💰 <strong>Taxas:</strong> Conforme faturamento\n💳 <strong>Cartão:</strong> Para funcionários\n\n<strong>Vantagens:</strong> Maior limite, atendimento especializado, relatórios gerenciais"
+    },
+    "conta_pessoa_fisica": {
+      "keywords": ["conta pessoa física", "conta pf", "conta individual", "conta pessoal", "abrir conta"],
+      "intent": "individual_account",
+      "response_template": "Conta Pessoa Física:\n\n👤 <strong>Requisitos:</strong> Maior de 18 anos, CPF ativo\n📋 <strong>Documentos:</strong> RG, CPF, comprovante de renda\n💰 <strong>Taxas:</strong> Conforme pacote escolhido\n💳 <strong>Cartão:</strong> Débito e/ou crédito\n\n<strong>Tipos:</strong> Básica, Premium, Black (conforme renda)"
+    },
+    "conta_poupanca_especial": {
+      "keywords": ["poupança especial", "poupança plus", "poupança premium", "poupança diferenciada", "poupança alta renda"],
+      "intent": "special_savings",
+      "response_template": "Poupança Especial:\n\n⭐ <strong>Requisitos:</strong> Saldo médio de R$ 10 mil\n💰 <strong>Rendimento:</strong> 0,6% ao mês + TR\n💳 <strong>Cartão:</strong> Gold ou Platinum\n🏪 <strong>Atendimento:</strong> Agências premium\n\n<strong>Vantagem:</strong> Maior rendimento e benefícios exclusivos"
+    },
+    "conta_corrente_especial": {
+      "keywords": ["conta especial", "conta premium", "conta gold", "conta platinum", "conta black"],
+      "intent": "special_checking",
+      "response_template": "Conta Corrente Especial:\n\n⭐ <strong>Tipos:</strong> Gold, Platinum, Black\n💰 <strong>Requisitos:</strong> Renda mensal de R$ 5 mil a R$ 50 mil+\n💳 <strong>Cartão:</strong> Sem anuidade, limite maior\n🏪 <strong>Atendimento:</strong> Agências premium, gerente dedicado\n\n<strong>Benefícios:</strong> Taxas reduzidas, investimentos exclusivos, seguros inclusos"
+    },
+    "conta_digital_especial": {
+      "keywords": ["conta digital premium", "conta digital plus", "conta digital especial", "conta digital gold"],
+      "intent": "special_digital",
+      "response_template": "Conta Digital Especial:\n\n📱 <strong>100% Online:</strong> Abertura e gestão pelo celular\n⭐ <strong>Benefícios:</strong> Investimentos, seguros, empréstimos\n💳 <strong>Cartão:</strong> Sem anuidade, cashback\n🏪 <strong>Rede:</strong> Saques gratuitos em qualquer banco\n\n<strong>Vantagem:</strong> Todos os serviços bancários no celular!"
+    },
+    "conta_salario_especial": {
+      "keywords": ["conta salário premium", "conta salário plus", "conta salário especial", "conta salário gold"],
+      "intent": "special_salary",
+      "response_template": "Conta Salário Especial:\n\n💰 <strong>Isenta:</strong> Taxas de manutenção\n💳 <strong>Cartão:</strong> Débito sem anuidade\n📱 <strong>App:</strong> Interface simplificada\n🏪 <strong>Rede:</strong> Saques gratuitos\n\n<strong>Vantagem:</strong> Ideal para recebimento de salário sem custos!"
+    },
+    "conta_poupanca_especial_plus": {
+      "keywords": ["poupança especial plus", "poupança vip", "poupança exclusiva", "poupança alta renda plus"],
+      "intent": "special_savings_plus",
+      "response_template": "Poupança Especial Plus:\n\n⭐ <strong>Requisitos:</strong> Saldo médio de R$ 50 mil\n💰 <strong>Rendimento:</strong> 0,7% ao mês + TR\n💳 <strong>Cartão:</strong> Platinum ou Black\n🏪 <strong>Atendimento:</strong> Agências VIP\n\n<strong>Vantagem:</strong> Rendimento superior e benefícios exclusivos!"
+    },
+    "conta_corrente_especial_plus": {
+      "keywords": ["conta especial plus", "conta vip", "conta exclusiva", "conta alta renda plus"],
+      "intent": "special_checking_plus",
+      "response_template": "Conta Especial Plus:\n\n⭐ <strong>Requisitos:</strong> Renda mensal de R$ 50 mil+\n💰 <strong>Taxas:</strong> Isentas\n💳 <strong>Cartão:</strong> Black, limite ilimitado\n🏪 <strong>Atendimento:</strong> Agências VIP, gerente dedicado\n\n<strong>Benefícios:</strong> Investimentos exclusivos, seguros premium, viagens"
+    },
+    "conta_digital_especial_plus": {
+      "keywords": ["conta digital vip", "conta digital exclusiva", "conta digital alta renda", "conta digital premium plus"],
+      "intent": "special_digital_plus",
+      "response_template": "Conta Digital VIP:\n\n📱 <strong>100% Online:</strong> Todos os serviços no celular\n⭐ <strong>Benefícios:</strong> Investimentos exclusivos, seguros premium\n💳 <strong>Cartão:</strong> Black, cashback 2%\n🏪 <strong>Rede:</strong> Saques ilimitados\n\n<strong>Vantagem:</strong> Banco completo no seu celular!"
+    },
+    "conta_salario_especial_plus": {
+      "keywords": ["conta salário vip", "conta salário exclusiva", "conta salário alta renda", "conta salário premium plus"],
+      "intent": "special_salary_plus",
+      "response_template": "Conta Salário VIP:\n\n💰 <strong>Isenta:</strong> Todas as taxas\n💳 <strong>Cartão:</strong> Black, sem anuidade\n📱 <strong>App:</strong> Interface premium\n🏪 <strong>Rede:</strong> Saques ilimitados\n\n<strong>Vantagem:</strong> Recebimento de salário com benefícios exclusivos!"
+    }
+  }
+}
