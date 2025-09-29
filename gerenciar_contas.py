@@ -1,13 +1,14 @@
+#!/usr/bin/env python3
 """
-Modelo de dados e funções de carregamento
+Script para gerenciar contas bancárias do chatbot
 """
-import json
-import bcrypt
 
-# In-memory storage (in production, use a database)
-users_db = {
+import json
+from datetime import datetime
+
+# Dados das contas (copiados do app_simple_ai.py)
+contas = {
     'joao.silva@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'João Silva',
         'account_number': '1234567890',
         'balance': 5000.00,
@@ -18,7 +19,6 @@ users_db = {
         ]
     },
     'maria.santos@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Maria Santos',
         'account_number': '0000000002',
         'balance': 3200.00,
@@ -27,7 +27,6 @@ users_db = {
         ]
     },
     'pedro.oliveira@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Pedro Oliveira',
         'account_number': '0000000003',
         'balance': 1500.00,
@@ -37,7 +36,6 @@ users_db = {
         ]
     },
     'ana.costa@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Ana Costa',
         'account_number': '0000000004',
         'balance': 7500.00,
@@ -46,7 +44,6 @@ users_db = {
         ]
     },
     'carlos.ferreira@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Carlos Ferreira',
         'account_number': '0000000005',
         'balance': 2800.00,
@@ -56,7 +53,6 @@ users_db = {
         ]
     },
     'lucia.rodrigues@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Lúcia Rodrigues',
         'account_number': '0000000006',
         'balance': 4200.00,
@@ -65,7 +61,6 @@ users_db = {
         ]
     },
     'roberto.almeida@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Roberto Almeida',
         'account_number': '0000000007',
         'balance': 1800.00,
@@ -75,7 +70,6 @@ users_db = {
         ]
     },
     'fernanda.lima@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Fernanda Lima',
         'account_number': '0000000008',
         'balance': 6200.00,
@@ -84,7 +78,6 @@ users_db = {
         ]
     },
     'marcos.souza@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Marcos Souza',
         'account_number': '0000000009',
         'balance': 950.00,
@@ -94,7 +87,6 @@ users_db = {
         ]
     },
     'patricia.mendes@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Patrícia Mendes',
         'account_number': '0000000010',
         'balance': 3800.00,
@@ -103,7 +95,6 @@ users_db = {
         ]
     },
     'antonio.barbosa@email.com': {
-        'password': bcrypt.hashpw('senha123'.encode('utf-8'), bcrypt.gensalt()),
         'name': 'Antônio Barbosa',
         'account_number': '0000000011',
         'balance': 2100.00,
@@ -114,22 +105,107 @@ users_db = {
     }
 }
 
-def load_banking_intents():
-    """Carrega intents bancários do arquivo JSON"""
-    try:
-        with open('data/banking_intents.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data['intents']
-    except FileNotFoundError:
-        print("⚠️ Arquivo banking_intents.json não encontrado. Usando dados padrão.")
-        return {}
+def mostrar_resumo():
+    """Mostra resumo das contas"""
+    total_contas = len(contas)
+    saldo_total = sum(conta['balance'] for conta in contas.values())
+    saldo_medio = saldo_total / total_contas
+    
+    print("=" * 60)
+    print("🏦 RESUMO DAS CONTAS BANCÁRIAS")
+    print("=" * 60)
+    print(f"📊 Total de Contas: {total_contas}")
+    print(f"💰 Saldo Total: R$ {saldo_total:,.2f}")
+    print(f"📈 Saldo Médio: R$ {saldo_medio:,.2f}")
+    print(f"📅 Data: {datetime.now().strftime('%d/%m/%Y %H:%M')}")
+    print("=" * 60)
 
-def load_faq_responses():
-    """Carrega respostas FAQ do arquivo JSON"""
-    try:
-        with open('data/banking_concepts.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data['concepts']
-    except FileNotFoundError:
-        print("⚠️ Arquivo banking_concepts.json não encontrado. Usando dados padrão.")
-        return []
+def listar_contas():
+    """Lista todas as contas"""
+    print("\n📋 LISTA COMPLETA DE CONTAS")
+    print("-" * 60)
+    
+    for i, (email, conta) in enumerate(contas.items(), 1):
+        print(f"{i:2d}. {conta['name']}")
+        print(f"    📧 Email: {email}")
+        print(f"    🏦 Conta: {conta['account_number']}")
+        print(f"    💰 Saldo: R$ {conta['balance']:,.2f}")
+        print(f"    📊 Transações: {len(conta['transactions'])}")
+        print()
+
+def buscar_conta():
+    """Busca conta por nome ou email"""
+    termo = input("\n🔍 Digite nome ou email para buscar: ").lower()
+    
+    encontradas = []
+    for email, conta in contas.items():
+        if (termo in conta['name'].lower() or 
+            termo in email.lower() or 
+            termo in conta['account_number']):
+            encontradas.append((email, conta))
+    
+    if encontradas:
+        print(f"\n✅ Encontradas {len(encontradas)} conta(s):")
+        for email, conta in encontradas:
+            print(f"   👤 {conta['name']} ({email})")
+            print(f"   🏦 Conta: {conta['account_number']}")
+            print(f"   💰 Saldo: R$ {conta['balance']:,.2f}")
+            print()
+    else:
+        print("❌ Nenhuma conta encontrada.")
+
+def mostrar_ranking():
+    """Mostra ranking por saldo"""
+    print("\n🏆 RANKING POR SALDO")
+    print("-" * 60)
+    
+    ranking = sorted(contas.items(), key=lambda x: x[1]['balance'], reverse=True)
+    
+    for i, (email, conta) in enumerate(ranking, 1):
+        emoji = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else "🏅"
+        print(f"{emoji} {i:2d}. {conta['name']} - R$ {conta['balance']:,.2f}")
+
+def exportar_dados():
+    """Exporta dados para JSON"""
+    filename = f"contas_backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(contas, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n💾 Dados exportados para: {filename}")
+
+def menu():
+    """Menu principal"""
+    while True:
+        print("\n" + "=" * 60)
+        print("🏦 GERENCIADOR DE CONTAS BANCÁRIAS")
+        print("=" * 60)
+        print("1. 📊 Mostrar Resumo")
+        print("2. 📋 Listar Todas as Contas")
+        print("3. 🔍 Buscar Conta")
+        print("4. 🏆 Ranking por Saldo")
+        print("5. 💾 Exportar Dados")
+        print("6. ❌ Sair")
+        print("-" * 60)
+        
+        opcao = input("Escolha uma opção (1-6): ").strip()
+        
+        if opcao == '1':
+            mostrar_resumo()
+        elif opcao == '2':
+            listar_contas()
+        elif opcao == '3':
+            buscar_conta()
+        elif opcao == '4':
+            mostrar_ranking()
+        elif opcao == '5':
+            exportar_dados()
+        elif opcao == '6':
+            print("\n👋 Até logo!")
+            break
+        else:
+            print("❌ Opção inválida. Tente novamente.")
+
+if __name__ == "__main__":
+    print("🤖 Iniciando Gerenciador de Contas...")
+    menu()

@@ -1,0 +1,79 @@
+{
+  "intents": {
+    "saldo": {
+      "keywords": ["saldo", "quanto tenho", "dinheiro na conta", "valor disponível", "balance", "quanto", "dinheiro", "disponível", "conta corrente"],
+      "intent": "balance",
+      "response_template": "Seu saldo atual é R$ {balance:.2f}"
+    },
+    "transacoes": {
+      "keywords": ["transações", "histórico", "movimentações", "extrato", "transaction", "history", "movimento", "últimas transações", "movimentação"],
+      "intent": "transactions",
+      "response_template": "Aqui estão suas transações recentes:\n{transactions}"
+    },
+    "transferencia": {
+      "keywords": ["transferir", "transferência", "enviar dinheiro", "transfer", "enviar", "mandar", "pagar", "enviar valor"],
+      "intent": "transfer",
+      "response_template": "Para fazer uma transferência, use o formulário de transferência. Você precisará do número da conta do destinatário e do valor que deseja enviar."
+    },
+    "pix": {
+      "keywords": ["pix", "o que é pix", "como funciona pix", "chave pix", "pagar com pix", "receber pix"],
+      "intent": "pix_info",
+      "response_template": "O PIX é um sistema de pagamentos instantâneos brasileiro criado pelo Banco Central. Permite transferir dinheiro 24 horas por dia, incluindo finais de semana e feriados, usando apenas uma chave (CPF, email, telefone ou chave aleatória). É gratuito e instantâneo!"
+    },
+    "deposito": {
+      "keywords": ["depositar", "depósito", "adicionar dinheiro", "deposit", "adicionar", "colocar", "colocar dinheiro"],
+      "intent": "deposit",
+      "response_template": "Para fazer um depósito, use o formulário de depósito. Você pode adicionar dinheiro à sua conta."
+    },
+    "cartao": {
+      "keywords": ["cartão", "cartão de crédito", "cartão de débito", "limite", "fatura", "vencimento", "card", "crédito", "débito"],
+      "intent": "card_info",
+      "response_template": "Informações sobre cartões:\n\n💳 <strong>Cartão de Crédito:</strong> Permite compras a prazo com limite pré-aprovado\n💳 <strong>Cartão de Débito:</strong> Desconta diretamente da conta corrente\n📊 <strong>Limite:</strong> Valor máximo que pode ser gasto\n📅 <strong>Fatura:</strong> Resumo das compras do mês\n\nPara informações específicas do seu cartão, entre em contato com o suporte."
+    },
+    "emprestimo": {
+      "keywords": ["empréstimo", "emprestar", "financiamento", "crédito pessoal", "loan", "pegar dinheiro", "crédito"],
+      "intent": "loan_info",
+      "response_template": "Informações sobre empréstimos:\n\n💰 <strong>Crédito Pessoal:</strong> Dinheiro para uso livre\n🏠 <strong>Financiamento Imobiliário:</strong> Para compra de imóveis\n🚗 <strong>Financiamento de Veículos:</strong> Para compra de carros\n\nPara simular um empréstimo, acesse o menu 'Empréstimos' ou entre em contato com nosso atendimento."
+    },
+    "investimentos": {
+      "keywords": ["investir", "investimento", "renda fixa", "renda variável", "cdb", "lci", "lca", "tesouro", "ações", "invest", "aplicar dinheiro"],
+      "intent": "investment_info",
+      "response_template": "Opções de investimentos disponíveis:\n\n📈 <strong>Renda Fixa:</strong> CDB, LCI, LCA, Tesouro Direto\n📊 <strong>Renda Variável:</strong> Ações, Fundos de Investimento\n🏦 <strong>Poupança:</strong> Aplicação tradicional\n\nPara mais informações sobre investimentos, pergunte sobre conceitos específicos como 'CDB', 'LCI', 'Tesouro Direto' ou 'Ações'."
+    },
+    "seguros": {
+      "keywords": ["seguro", "seguros", "proteção", "cobertura", "sinistro", "apólice", "insurance", "proteger"],
+      "intent": "insurance_info",
+      "response_template": "Tipos de seguros disponíveis:\n\n🛡️ <strong>Seguro de Vida:</strong> Proteção para a família\n🏠 <strong>Seguro Residencial:</strong> Proteção do imóvel\n🚗 <strong>Seguro Auto:</strong> Proteção do veículo\n🏥 <strong>Seguro Saúde:</strong> Cobertura médica\n\nPara contratar um seguro, acesse o menu 'Seguros' ou fale com nosso corretor."
+    },
+    "conta_digital": {
+      "keywords": ["conta digital", "abrir conta", "conta online", "conta sem papel", "digital", "abrir", "nova conta"],
+      "intent": "digital_account",
+      "response_template": "Conta Digital - Vantagens:\n\n📱 <strong>100% Online:</strong> Abertura e gestão pelo celular\n💳 <strong>Cartão Gratuito:</strong> Sem anuidade\n🏧 <strong>Saques Gratuitos:</strong> Em qualquer caixa eletrônico\n💸 <strong>PIX Gratuito:</strong> Transferências instantâneas\n\nPara abrir sua conta digital, acesse o menu 'Abrir Conta' ou fale com nosso atendente."
+    },
+    "atendimento": {
+      "keywords": ["atendimento", "suporte", "falar com pessoa", "atendente", "help desk", "contato", "telefone"],
+      "intent": "support",
+      "response_template": "Canais de Atendimento:\n\n📞 <strong>Telefone:</strong> 0800 123 4567\n💬 <strong>Chat Online:</strong> Disponível 24h\n📧 <strong>Email:</strong> atendimento@banco.com.br\n🏪 <strong>Agências:</strong> Segunda a sexta, 9h às 17h\n\nEstou aqui para ajudar! O que precisa saber?"
+    },
+    "ajuda": {
+      "keywords": ["ajuda", "help", "como usar", "o que posso fazer", "comandos", "menu", "opções"],
+      "intent": "help",
+      "response_template": "Posso ajudá-lo com:\n\n<ol style=\"margin: 10px 0; padding-left: 20px;\">\n<li>💰 <strong>Consultar saldo da conta</strong></li>\n<li>📊 <strong>Ver histórico de transações</strong></li>\n<li>💸 <strong>Fazer transferências</strong></li>\n<li>💳 <strong>Processar depósitos</strong></li>\n<li>🏦 <strong>Conceitos bancários básicos</strong></li>\n<li>📈 <strong>Investimentos e renda fixa</strong></li>\n<li>🔤 <strong>Siglas bancárias e financeiras</strong></li>\n<li>⚖️ <strong>Tributação e impostos</strong></li>\n<li>💳 <strong>Cartões e crédito</strong></li>\n<li>🏠 <strong>Empréstimos e financiamentos</strong></li>\n<li>🛡️ <strong>Seguros</strong></li>\n<li>📱 <strong>Conta digital</strong></li>\n<li>❓ <strong>Responder perguntas bancárias gerais</strong></li>\n</ol>\n\n<strong>💡 Dica:</strong> Pergunte \"o que é [conceito]\" para aprender sobre qualquer termo bancário ou financeiro!\n\nO que gostaria de saber?"
+    },
+    "saudacao": {
+      "keywords": ["olá", "oi", "bom dia", "boa tarde", "boa noite", "hello", "hi", "e aí", "tudo bem", "como vai"],
+      "intent": "greeting",
+      "response_template": "Olá {name}! Como posso ajudá-lo com suas necessidades bancárias hoje?"
+    },
+    "despedida": {
+      "keywords": ["tchau", "até logo", "obrigado", "valeu", "bye", "até mais", "até breve", "obrigada"],
+      "intent": "farewell",
+      "response_template": "Foi um prazer ajudá-lo! Estou sempre aqui quando precisar. Tenha um ótimo dia! 😊"
+    },
+    "emergencia": {
+      "keywords": ["emergência", "roubo", "perda", "cartão perdido", "bloquear", "urgente", "emergency", "roubaram"],
+      "intent": "emergency",
+      "response_template": "🚨 <strong>ATENÇÃO - SITUAÇÃO DE EMERGÊNCIA</strong>\n\nSe seu cartão foi roubado ou perdido:\n\n1️⃣ <strong>Bloqueie IMEDIATAMENTE:</strong> Ligue 0800 123 4567\n2️⃣ <strong>Registre BO:</strong> Faça um Boletim de Ocorrência\n3️⃣ <strong>Altere senhas:</strong> Internet Banking e aplicativo\n4️⃣ <strong>Monitore conta:</strong> Verifique movimentações suspeitas\n\n<strong>Ligue AGORA:</strong> 0800 123 4567 (24h)"
+    }
+  }
+}

@@ -271,4 +271,3 @@
 **Documento gerado automaticamente em 08/09/2025**  
 **Sistema:** Chatbot Bancário com IA/NLP  
 **Versão:** 2.0
-

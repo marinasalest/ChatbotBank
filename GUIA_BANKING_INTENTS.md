@@ -183,5 +183,3 @@ O arquivo `data/banking_intents.json` contém **intents** (intenções) que o ch
 ---
 
 **💡 Dica:** Comece com intents simples e vá expandindo gradualmente. Teste cada novo intent antes de adicionar o próximo!
-
-

@@ -1,0 +1,269 @@
+{
+  "concepts": [
+    {
+      "question": "o que é pix",
+      "keywords": ["pix", "o que é", "definição", "conceito"],
+      "answer": "O PIX é um sistema de pagamentos instantâneos brasileiro, criado pelo Banco Central. Permite transferir dinheiro 24 horas por dia, incluindo finais de semana e feriados, usando apenas uma chave (CPF, email, telefone ou chave aleatória). É gratuito e instantâneo!"
+    },
+    {
+      "question": "como funciona o pix",
+      "keywords": ["pix", "pagamento", "instantâneo", "chave", "como usar"],
+      "answer": "Para usar o PIX: 1) Cadastre uma chave PIX (CPF, email ou telefone); 2) Acesse sua conta bancária; 3) Escolha \"PIX\" e \"Transferir\"; 4) Digite a chave do destinatário; 5) Informe o valor e confirme. A transferência é instantânea e gratuita!"
+    },
+    {
+      "question": "o que é ted",
+      "keywords": ["ted", "o que é", "definição", "transferência"],
+      "answer": "TED (Transferência Eletrônica Disponível) é uma transferência bancária que funciona apenas em dias úteis, das 6h às 20h. Possui taxa de R$ 8,50 e o dinheiro fica disponível no mesmo dia para o destinatário."
+    },
+    {
+      "question": "o que é doc",
+      "keywords": ["doc", "o que é", "definição", "transferência"],
+      "answer": "DOC (Documento de Ordem de Crédito) é uma transferência bancária que funciona apenas em dias úteis, das 6h às 20h. Possui taxa de R$ 5,00 e o dinheiro fica disponível no próximo dia útil para o destinatário."
+    },
+    {
+      "question": "o que é chave pix",
+      "keywords": ["chave pix", "o que é", "definição", "cadastrar"],
+      "answer": "Chave PIX é um identificador único que substitui o número da conta e agência. Pode ser seu CPF, email, telefone ou uma chave aleatória. É mais fácil de lembrar e mais segura do que os dados bancários tradicionais."
+    },
+    {
+      "question": "como abrir uma conta",
+      "keywords": ["abrir", "conta", "cadastrar", "registrar", "nova conta"],
+      "answer": "Para abrir uma conta bancária, você precisa: 1) Dirigir-se a uma agência; 2) Levar RG, CPF e comprovante de residência; 3) Apresentar comprovante de renda; 4) Preencher formulários. Alguns bancos permitem abertura online!"
+    },
+    {
+      "question": "qual o limite de transferência",
+      "keywords": ["limite", "transferência", "máximo", "quanto posso", "limite pix"],
+      "answer": "Os limites variam conforme o tipo de conta: PIX - até R$ 5.000 por transação (conta básica); TED - até R$ 5.000 por dia; DOC - sem limite específico. Contas premium podem ter limites maiores."
+    },
+    {
+      "question": "como cancelar uma transferência",
+      "keywords": ["cancelar", "transferência", "desfazer", "reverter", "pix"],
+      "answer": "PIX: Não pode ser cancelado após confirmação. TED/DOC: Entre em contato imediatamente com o banco. A chance de cancelamento diminui conforme o tempo passa. Para PIX, confirme sempre os dados antes de enviar!"
+    },
+    {
+      "question": "qual a taxa de transferência",
+      "keywords": ["taxa", "custo", "preço", "valor", "transferência", "pix", "ted", "doc"],
+      "answer": "PIX: Gratuito! TED: R$ 8,50 por transferência. DOC: R$ 5,00 por transferência. Alguns bancos oferecem isenção de taxas para clientes premium ou pacotes específicos."
+    },
+    {
+      "question": "o que é conta corrente",
+      "keywords": ["conta corrente", "o que é", "definição", "tipo de conta"],
+      "answer": "Conta corrente é o tipo de conta bancária mais comum. Permite depósitos, saques, transferências, uso de cartão e cheques. Pode ter tarifas mensais, mas oferece total liquidez do dinheiro."
+    },
+    {
+      "question": "o que é conta poupança",
+      "keywords": ["poupança", "o que é", "definição", "rendimento"],
+      "answer": "Conta poupança é uma aplicação financeira que rende juros mensais. É mais segura do que investimentos, mas rende menos. Ideal para reserva de emergência. Rendimento atual: 0,5% ao mês + TR."
+    },
+    {
+      "question": "o que é cdb",
+      "keywords": ["cdb", "o que é", "definição", "investimento", "renda fixa"],
+      "answer": "CDB (Certificado de Depósito Bancário) é um investimento de renda fixa. Você empresta dinheiro ao banco e recebe juros. É mais seguro do que ações e rende mais do que a poupança. Garantido pelo FGC até R$ 250.000."
+    },
+    {
+      "question": "o que é fgc",
+      "keywords": ["fgc", "o que é", "definição", "proteção", "garantia"],
+      "answer": "FGC (Fundo Garantidor de Crédito) protege investimentos em caso de falência do banco. Garante até R$ 250.000 por CPF e por instituição. Cobre CDB, LCI, LCA e outros investimentos de renda fixa."
+    },
+    {
+      "question": "o que é cartão de crédito",
+      "keywords": ["cartão", "crédito", "o que é", "definição", "limite"],
+      "answer": "Cartão de crédito permite compras a prazo sem juros (se pagar a fatura completa). Possui limite pré-aprovado e data de vencimento. Se não pagar integral, cobra juros altos. Use com responsabilidade!"
+    },
+    {
+      "question": "o que é cartão de débito",
+      "keywords": ["cartão", "débito", "o que é", "definição", "saque"],
+      "answer": "Cartão de débito usa o dinheiro que você tem na conta corrente. A compra é descontada imediatamente do saldo. Permite saques em caixas eletrônicos e compras online ou em lojas físicas."
+    },
+    {
+      "question": "o que é cheque especial",
+      "keywords": ["cheque especial", "o que é", "definição", "limite", "juros"],
+      "answer": "Cheque especial é um limite de crédito automático da conta corrente. Quando você fica sem saldo, o banco empresta dinheiro, mas cobra juros altos (média de 300% ao ano). Use apenas em emergências!"
+    },
+    {
+      "question": "o que é empréstimo pessoal",
+      "keywords": ["empréstimo", "pessoal", "o que é", "definição", "juros"],
+      "answer": "Empréstimo pessoal é dinheiro emprestado pelo banco para uso livre. Possui juros menores do que o cheque especial, mas ainda altos. Requer análise de crédito e comprovação de renda. Pague sempre em dia!"
+    },
+    {
+      "question": "o que é financiamento",
+      "keywords": ["financiamento", "o que é", "definição", "imóvel", "veículo"],
+      "answer": "Financiamento é empréstimo para compra de bens específicos (casa, carro). O bem fica como garantia, então os juros são menores. Pode ser consignado (desconto na folha) ou tradicional."
+    },
+    {
+      "question": "o que é consignado",
+      "keywords": ["consignado", "o que é", "definição", "desconto", "folha"],
+      "answer": "Empréstimo consignado tem desconto direto na folha de pagamento ou benefício. Possui juros menores porque o banco tem garantia. Disponível para aposentados, servidores públicos e trabalhadores CLT."
+    },
+    {
+      "question": "o que é investimento",
+      "keywords": ["investimento", "o que é", "definição", "aplicação", "rendimento"],
+      "answer": "Investimento é aplicar dinheiro para obter retorno. Pode ser renda fixa (CDB, poupança) ou variável (ações, fundos). Quanto maior o risco, maior o potencial de ganho. Comece sempre com renda fixa!"
+    },
+    {
+      "question": "o que é renda fixa",
+      "keywords": ["renda fixa", "o que é", "definição", "investimento seguro"],
+      "answer": "Renda fixa são investimentos com retorno previsível e menor risco. Exemplos: CDB, LCI, LCA, Tesouro Direto, poupança. Ideal para iniciantes e quem busca segurança. Rendimento definido no momento da aplicação."
+    },
+    {
+      "question": "o que é renda variável",
+      "keywords": ["renda variável", "o que é", "definição", "ações", "risco"],
+      "answer": "Renda variável são investimentos com retorno incerto e maior risco. Exemplos: ações, fundos de ações, criptomoedas. Pode render muito ou perder dinheiro. Ideal para quem tem perfil mais arrojado e tolera riscos."
+    },
+    {
+      "question": "o que é tesouro direto",
+      "keywords": ["tesouro direto", "o que é", "definição", "títulos públicos"],
+      "answer": "Tesouro Direto é a plataforma para comprar títulos públicos do governo federal. É seguro, rende mais do que a poupança e tem liquidez. Tipos: Selic, IPCA+, Prefixado. Mínimo de R$ 30 para investir."
+    },
+    {
+      "question": "o que é lci",
+      "keywords": ["lci", "o que é", "definição", "letra de crédito imobiliário"],
+      "answer": "LCI (Letra de Crédito Imobiliário) é um investimento de renda fixa isento de IR. Financia o setor imobiliário. Possui rendimento fixo ou pós-fixado. Liquidez apenas no vencimento. Garantido pelo FGC até R$ 250.000."
+    },
+    {
+      "question": "o que é lca",
+      "keywords": ["lca", "o que é", "definição", "letra de crédito do agronegócio"],
+      "answer": "LCA (Letra de Crédito do Agronegócio) é um investimento de renda fixa isento de IR. Financia o agronegócio. Possui rendimento fixo ou pós-fixado. Liquidez apenas no vencimento. Garantido pelo FGC até R$ 250.000."
+    },
+    {
+      "question": "o que é fundo de investimento",
+      "keywords": ["fundo", "investimento", "o que é", "definição", "carteira"],
+      "answer": "Fundo de investimento é uma carteira coletiva administrada por profissionais. Você compra cotas e os gestores investem seu dinheiro. Tipos: renda fixa, ações, multimercado. Possui taxa de administração e performance."
+    },
+    {
+      "question": "o que é ação",
+      "keywords": ["ação", "o que é", "definição", "bolsa", "empresa"],
+      "answer": "Ação é uma pequena parte de uma empresa. Ao comprar ações, você vira sócio. Pode valorizar ou desvalorizar. Rendimento: dividendos + valorização. Possui risco alto, mas potencial de ganho elevado. Negociada na B3."
+    },
+    {
+      "question": "o que é dividendos",
+      "keywords": ["dividendos", "o que é", "definição", "lucro", "distribuição"],
+      "answer": "Dividendos são parte do lucro que a empresa distribui aos acionistas. São pagos mensalmente, trimestralmente ou anualmente. É renda passiva - você ganha dinheiro sem trabalhar. Empresas sólidas pagam dividendos regulares."
+    },
+    {
+      "question": "o que é b3",
+      "keywords": ["b3", "o que é", "definição", "bolsa", "valores"],
+      "answer": "B3 (Brasil, Bolsa, Balcão) é a bolsa de valores brasileira. Local onde são negociadas ações, fundos e títulos. Funciona de segunda a sexta, das 9h às 18h. É a maior bolsa da América Latina."
+    },
+    {
+      "question": "o que é selic",
+      "keywords": ["selic", "o que é", "definição", "taxa", "juros"],
+      "answer": "SELIC é a taxa básica de juros da economia brasileira. É definida pelo Copom a cada 45 dias. Influencia todos os juros do país. Atualmente em 10,75% ao ano. Quanto maior, melhor para investimentos de renda fixa."
+    },
+    {
+      "question": "o que é ipca",
+      "keywords": ["ipca", "o que é", "definição", "inflação", "índice"],
+      "answer": "IPCA (Índice Nacional de Preços ao Consumidor Amplo) mede a inflação no Brasil. É calculado pelo IBGE mensalmente. Meta do governo: 3% ao ano. Investimentos IPCA+ protegem contra inflação."
+    },
+    {
+      "question": "o que é copom",
+      "keywords": ["copom", "o que é", "definição", "banco central", "juros"],
+      "answer": "Copom (Comitê de Política Monetária) define a taxa SELIC. Reuniões a cada 45 dias. Possui 8 membros do Banco Central. A decisão influencia economia, inflação e investimentos. Acompanhe as reuniões!"
+    },
+    {
+      "question": "o que é cpf",
+      "keywords": ["cpf", "o que é", "definição", "documento", "cadastro"],
+      "answer": "CPF (Cadastro de Pessoa Física) é o documento de identificação fiscal de cada brasileiro. Possui 11 dígitos únicos. É obrigatório para abrir contas, investir e declarar IR. Nunca compartilhe com estranhos!"
+    },
+    {
+      "question": "o que é cnpj",
+      "keywords": ["cnpj", "o que é", "definição", "empresa", "pessoa jurídica"],
+      "answer": "CNPJ (Cadastro Nacional da Pessoa Jurídica) identifica empresas no Brasil. Possui 14 dígitos. É necessário para empresas abrirem contas, emitirem notas fiscais e contratarem funcionários."
+    },
+    {
+      "question": "o que é cvm",
+      "keywords": ["cvm", "o que é", "definição", "comissão", "valores mobiliários"],
+      "answer": "CVM (Comissão de Valores Mobiliários) regula o mercado de capitais brasileiro. Protege investidores, fiscaliza empresas e aprova fundos. Equivale à SEC americana. Site oficial: cvm.gov.br"
+    },
+    {
+      "question": "o que é anbima",
+      "keywords": ["anbima", "o que é", "definição", "associação", "mercado"],
+      "answer": "ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais) representa instituições financeiras. Define regras, classifica fundos e protege investidores. Site: anbima.com.br"
+    },
+    {
+      "question": "o que é bcb",
+      "keywords": ["bcb", "banco central", "o que é", "definição", "autoridade"],
+      "answer": "BCB (Banco Central do Brasil) é a autoridade monetária do país. Controla inflação, regula bancos e define política monetária. Site: bcb.gov.br. Presidido por Roberto Campos Neto."
+    },
+    {
+      "question": "o que é cmn",
+      "keywords": ["cmn", "conselho monetário", "o que é", "definição", "política"],
+      "answer": "CMN (Conselho Monetário Nacional) é o órgão máximo do sistema financeiro. Define diretrizes, aprova regras e supervisiona o BCB. O Ministro da Fazenda é o presidente."
+    },
+    {
+      "question": "o que é bacen",
+      "keywords": ["bacen", "banco central", "o que é", "definição", "sigla"],
+      "answer": "Bacen é a sigla do Banco Central do Brasil. É o mesmo que BCB. Autoridade monetária e reguladora do sistema financeiro. Site: bcb.gov.br"
+    },
+    {
+      "question": "o que é spc",
+      "keywords": ["spc", "o que é", "definição", "serasa", "protesto"],
+      "answer": "SPC (Serviço de Proteção ao Crédito) é um birô de crédito. Registra inadimplência, consultas e CPF negativado. É diferente do Serasa. Consulte regularmente para manter o nome limpo."
+    },
+    {
+      "question": "o que é serasa",
+      "keywords": ["serasa", "o que é", "definição", "spc", "crédito"],
+      "answer": "Serasa é um birô de crédito privado. Consulta CPF, score de crédito e restrições. É diferente do SPC. Score alto = melhor para empréstimos e financiamentos. Site: serasa.com.br"
+    },
+    {
+      "question": "o que é score de crédito",
+      "keywords": ["score", "crédito", "o que é", "definição", "pontuação"],
+      "answer": "Score de crédito é uma pontuação de 0 a 1000 que mede sua capacidade de pagamento. Quanto maior, melhor. Influencia aprovação de empréstimos, cartões e financiamentos. Pague em dia para mantê-lo alto."
+    },
+    {
+      "question": "o que é diversificação",
+      "keywords": ["diversificação", "o que é", "definição", "risco", "carteira"],
+      "answer": "Diversificação é não colocar todos os ovos na mesma cesta. Investir em diferentes ativos, setores e países. Reduz o risco total da carteira. Exemplo: 50% renda fixa + 30% ações + 20% fundos."
+    },
+    {
+      "question": "o que é perfil de investidor",
+      "keywords": ["perfil", "investidor", "o que é", "definição", "conservador"],
+      "answer": "Perfil de investidor define sua tolerância ao risco: CONSERVADOR (baixo risco, renda fixa); MODERADO (risco médio, misto); AGRESSIVO (alto risco, renda variável). Teste gratuito em corretoras."
+    },
+    {
+      "question": "o que é liquidez",
+      "keywords": ["liquidez", "o que é", "definição", "resgate", "dinheiro"],
+      "answer": "Liquidez é a facilidade de transformar investimento em dinheiro. Alta liquidez = resgate imediato (poupança). Baixa liquidez = só no vencimento (LCI). Considere suas necessidades antes de investir."
+    },
+    {
+      "question": "o que é rentabilidade",
+      "keywords": ["rentabilidade", "o que é", "definição", "retorno", "rendimento"],
+      "answer": "Rentabilidade é o ganho do investimento. Pode ser fixa (CDB) ou variável (ações). Sempre compare com a inflação. Rentabilidade real = rentabilidade nominal - inflação. Foque no longo prazo."
+    },
+    {
+      "question": "o que é conta digital",
+      "keywords": ["conta digital", "o que é", "definição", "banco digital", "online"],
+      "answer": "Conta digital é uma conta bancária 100% online. Sem agência física, sem tarifas e sem papelada. Abertura rápida pelo app. Exemplos: Nubank, Inter, C6 Bank. Ideal para quem quer praticidade."
+    },
+    {
+      "question": "o que é conta salário",
+      "keywords": ["conta salário", "o que é", "definição", "trabalhador", "empresa"],
+      "answer": "Conta salário é obrigatória para receber salário. Sem tarifas de manutenção. Não permite empréstimos. Pode ter cartão de débito. A empresa escolhe o banco. Você pode ter outras contas também."
+    },
+    {
+      "question": "o que é conta conjunta",
+      "keywords": ["conta conjunta", "o que é", "definição", "casal", "compartilhada"],
+      "answer": "Conta conjunta é compartilhada entre duas pessoas. Ambos podem movimentar, sacar e transferir. Ideal para casais. Responsabilidade solidária - ambos respondem por dívidas. Cuidado com relacionamentos!"
+    },
+    {
+      "question": "o que é conta universitária",
+      "keywords": ["conta universitária", "o que é", "definição", "estudante", "jovem"],
+      "answer": "Conta universitária é para estudantes. Menos tarifas, benefícios especiais e cartão com limite baixo. Requer comprovante de matrícula. Ideal para começar a vida financeira. Vira conta normal após formado."
+    },
+    {
+      "question": "o que é ir",
+      "keywords": ["ir", "imposto de renda", "o que é", "definição", "tributação"],
+      "answer": "IR (Imposto de Renda) é o imposto sobre ganhos. Investimentos têm tributação diferente: poupança isenta; CDB 22,5%; ações 15% sobre lucro. Declare sempre. Evite sonegação!"
+    },
+    {
+      "question": "o que é iof",
+      "keywords": ["iof", "o que é", "definição", "imposto", "operações"],
+      "answer": "IOF (Imposto sobre Operações Financeiras) incide sobre empréstimos, financiamentos e investimentos de curto prazo. CDB com menos de 30 dias paga IOF. Evite resgates antecipados!"
+    },
+    {
+      "question": "o que é come-cotas",
+      "keywords": ["come-cotas", "o que é", "definição", "imposto", "fundos"],
+      "answer": "Come-cotas é a cobrança antecipada de IR em fundos de investimento. Acontece em maio e novembro. Reduz o valor das cotas. Fundos de curto prazo têm mais come-cotas."
+    }
+  ]
+}
